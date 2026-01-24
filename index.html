@@ -260,6 +260,25 @@
             transform: translateY(-3px);
         }
 
+        .hero-phone-display {
+            margin-bottom: 25px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .hero-phone-display a {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--accent);
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            transition: var(--transition);
+        }
+
+        .hero-phone-display a:hover {
+            transform: scale(1.05);
+            color: var(--white);
+        }
+
         /* Floating Action Buttons */
         .floating-btn {
             position: fixed;
@@ -318,7 +337,7 @@
             .hero {
                 height: 100vh;
                 min-height: 100vh;
-                padding-top: 60px;
+                padding-top: 40px;
                 padding-bottom: 20px;
                 overflow: hidden;
             }
@@ -326,7 +345,6 @@
             .hero-content h1 {
                 font-size: 2.5rem;
                 word-wrap: break-word;
-                margin-top: 10px;
             }
 
             .hero-subtitle {
@@ -342,6 +360,10 @@
             .highlight-item {
                 padding: 8px 12px;
                 font-size: 0.85rem;
+            }
+
+            .hero-phone-display a {
+                font-size: 1.8rem;
             }
         }
 
@@ -369,6 +391,10 @@
 
             .hero-subtitle {
                 font-size: 1.1rem !important;
+            }
+
+            .hero-phone-display a {
+                font-size: 1.5rem;
             }
 
             .hero-btns {
@@ -429,8 +455,12 @@
                     </div>
                 </div>
 
+                <div class="hero-phone-display">
+                    <a href="tel:0537869349"><i class="fas fa-phone-alt"></i> 0537869349</a>
+                </div>
+
                 <div class="hero-btns">
-                    <a href="tel:0537869349" class="btn btn-primary"><i class="fas fa-phone-alt"></i> اتصل بنا الآن</a>
+                    <a href="tel:0537869349" class="btn btn-primary">إتصل بنا الآن</a>
                     <a href="https://wa.me/966537869349" target="_blank" class="btn btn-secondary"><i
                             class="fab fa-whatsapp"></i> واتساب</a>
                 </div>
