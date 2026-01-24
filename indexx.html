@@ -128,7 +128,7 @@
             display: flex;
             align-items: center;
             position: relative;
-            padding-top: 80px;
+            padding-top: 60px;
             overflow: hidden;
         }
 
@@ -315,43 +315,70 @@
             }
 
             .hero {
-                height: auto;
-                min-height: 110vh;
-                padding-top: 120px;
-                padding-bottom: 100px;
+                height: 100vh;
+                min-height: 100vh;
+                padding-top: 80px;
+                padding-bottom: 20px;
             }
 
             .hero-content h1 {
-                font-size: 2.8rem;
+                font-size: 2.5rem;
                 word-wrap: break-word;
-                margin-top: 20px;
+                margin-top: 10px;
+            }
+
+            .hero-subtitle {
+                font-size: 1.4rem !important;
+                margin-bottom: 20px;
+            }
+
+            .hero-highlights {
+                gap: 10px;
+                margin-bottom: 30px;
+            }
+
+            .highlight-item {
+                padding: 8px 12px;
+                font-size: 0.85rem;
             }
         }
 
         @media (max-width: 768px) {
             .floating-btn {
-                width: 55px;
-                height: 55px;
-                font-size: 1.5rem;
-                bottom: 20px;
+                width: 50px;
+                height: 50px;
+                font-size: 1.3rem;
+                bottom: 15px;
             }
 
             .btn-floating-whatsapp {
-                right: 20px;
+                right: 15px;
             }
 
             .btn-floating-call {
-                left: 20px;
+                left: 15px;
             }
         }
 
         @media (max-width: 576px) {
             .hero-content h1 {
-                font-size: 2.2rem;
+                font-size: 1.8rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem !important;
             }
 
             .hero-btns {
-                flex-direction: column;
+                flex-direction: row;
+                gap: 10px;
+            }
+
+            .btn {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+                flex: 1;
+                white-space: nowrap;
             }
         }
     </style>
