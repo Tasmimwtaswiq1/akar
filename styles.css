@@ -19,15 +19,17 @@
     font-family: 'Almarai', 'Cairo', sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
 }
 
 body {
     background-color: var(--white);
     color: var(--text-dark);
     line-height: 1.6;
-    overflow-x: hidden;
 }
 
 h1,
@@ -986,33 +988,31 @@ ul {
         display: block;
     }
 
-    .hero-content h1 {
-        font-size: 3rem;
+    .premium-img {
+        width: 100%;
+        box-shadow: 15px 15px 0 var(--accent);
+        /* Smaller shadow to prevent overflow */
     }
 
-    .hero-subtitle {
-        font-size: 1.4rem !important;
+    .experience-card {
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: fit-content;
+        transform: none;
+        padding: 20px;
     }
 
-    .why-us-wrapper {
-        flex-direction: column-reverse;
-    }
-
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .sticky-mobile-btns {
-        display: flex;
-    }
-
-    .journey-steps {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .journey-steps .spacer {
+    .floating-doc {
         display: none;
+        /* Hide floating elements that might overflow */
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+        word-wrap: break-word;
+        /* Prevent long words from overflowing */
     }
 
     .footer-top,
